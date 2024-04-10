@@ -1,0 +1,14 @@
+# Temp build files and caches
+node_modules
+build
+dist
+
+# OS-specific files
+.DS_Store  # Mac specific
+
+# IDE and text editor config 
+.vscode
+.idea
+
+.git
+.env
