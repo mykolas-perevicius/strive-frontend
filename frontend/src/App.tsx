@@ -4,14 +4,17 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 // import { Button } from "@/components/ui/button"
-import {LandingComponent}  from './components/component/landing-component'
+import {LandingComponent}  from '@/components/component/landing-component'
+import {WeightliftingDashboard} from '@/components/component/weightlifting-dashboard'
+import {RunningDashboard} from '@/components/component/running-dashboard'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingComponent />} /> 
-        {/* Add more routes if needed */}
+        <Route path="/weightlifting" element={<WeightliftingDashboard />} />
+        <Route path="/running" element={<RunningDashboard />} />
       </Routes>
     </BrowserRouter>
   );
