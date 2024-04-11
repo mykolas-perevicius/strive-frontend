@@ -1,6 +1,6 @@
 # Strive Frontend
 
-This repository contains the frontend codebase for the StriveFIT application, built with React, TypeScript, and Tailwind CSS. The project utilizes Vite for an optimized development experience and is containerized with Docker for easy setup and deployment.
+This repository contains the frontend codebase for the StriveFIT application. Built with React, TypeScript, Tailwind CSS, and the shadcn/ui component library, it leverages Vite for fast development and Docker for seamless deployment.
 
 ## Features
 
@@ -10,6 +10,8 @@ This repository contains the frontend codebase for the StriveFIT application, bu
 - **Vite**: For fast build times and hot module replacement.
 - **Docker**: For consistent development and production environments.
 - **Nginx**: Used in production for serving static files efficiently.
+- **shadcn/ui**: Provides well-designed, pre-built components to accelerate development. Read more at [the shadcn/ui documentation](https://ui.shadcn.com/docs).
+
 
 ## Prerequisites
 
@@ -37,7 +39,7 @@ To set up and run this project locally for development:
     ```bash
     Copy code
     npm run dev```
-This will start the Vite development server, typically available at http://localhost:5173. The port can differ, so check the output of the command.
+This will start the Vite development server. The port can differ, so check the output of the command.
 
 ## Building and Running with Docker
 
@@ -51,12 +53,50 @@ To build and run the application using Docker and Docker Compose:
       ```bash
       Copy code
       docker-compose up -d```
-This will start the frontend service, running on http://localhost:3000, served by Nginx.
+This will start the frontend service, served by Nginx.
 
 ## Configuration
 
-- Tailwind CSS: Modify tailwind.config.js to customize your styles.
-- Nginx: Adjust nginx.conf in the Docker configuration if you need custom server settings.
+### vite.config.ts
+
+- Purpose: Manages Vite's build and development server settings.
+- Key Elements:
+  - alias: Streamlines import paths with shortcuts (e.g., @).
+
+### tsconfig.json
+
+- Purpose: Defines TypeScript compiler options.
+- Key Elements:
+  - paths: Sets up import aliases for improved organization.
+  - include: Specifies the files and folders TypeScript should process.
+
+### tailwind.config.js
+
+- Purpose: Customizes Tailwind CSS for your app's design.
+- Key Elements:
+  - content: Informs Tailwind which files to scan to avoid purging unused styles.
+  - theme: Extends Tailwind's defaults with your project's colors, spacing, fonts, etc.
+  - plugins: Includes add-ons (e.g., tailwindcssAnimate) for extended functionality.
+### components.json
+
+- Purpose: Configures the integration of the shadcn/ui component library.
+- Key Elements:
+  - tailwind: Coordinates shadcn/ui components with your Tailwind configuration.
+  - aliases: Defines shortcuts for importing from commonly used directories.
+
+### index.css
+
+ - Purpose: Contains global CSS styles and Tailwind's base layers.
+ - Key Elements:
+     - Color scheme handling: Defines light/dark mode styles.
+     - Basic styling for global elements (fonts, links).
+  
+### globals.css
+
+- Purpose: Houses CSS custom properties (variables) for theming and Tailwind integration.
+- Key Elements:
+  - Theme variables (`--background`, `--foreground`, etc.): Defines your app's color palette.
+  - Dark mode styling: Configures styles for the `.dark` class.
 
 ## Development Tools
 
