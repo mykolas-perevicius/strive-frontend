@@ -25,10 +25,10 @@
       "@/*": [
         "./src/*"
       ],  // Existing path mapping 
-      "@/components/*": ["./src/components/*"],
-      "@/lib/utils/*": ["./src/lib/utils/*"]
+      "@/components/*": ["src/components/*"],
+      "@/lib/utils/*": ["src/lib/utils/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "src/components/ui"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
