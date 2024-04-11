@@ -24,16 +24,20 @@ To set up and run this project locally for development:
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd strive-frontend```
+   cd strive-frontend
+   ```
 2. Navigate to the frontend directory:
     ```bash
-    cd frontend```
+    cd frontend
+    ```
 3. Install dependencies:
     ``` bash
-    npm install```
+    npm install
+    ```
 4. Run the development server:
     ```bash
-    npm run dev```
+    npm run dev
+    ```
 This will start the Vite development server, typically available at http://localhost:5173. The port can differ, so check the output of the command.
 
 ## Building and Running with Docker
@@ -42,10 +46,12 @@ To build and run the application using Docker and Docker Compose:
 
 1. Build the Docker containers:
     ```bash
-    docker-compose build```
+    docker-compose build
+    ```
 2. Start the services:
       ```bash
-      docker-compose up -d```
+      docker-compose up -d
+      ```
 This will start the frontend service, running on http://localhost:3000, served by Nginx.
 
 ## Configuration
