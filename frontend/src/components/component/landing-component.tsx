@@ -4,13 +4,7 @@
 * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
 */
 import { Link } from 'react-router-dom';
-
-console.log('Full Input Path:', __dirname + '../components/ui/input'); 
-
 import { Input } from "@/components/ui/input"
-
-console.log('Full Button Path:', __dirname + '../components/ui/input'); 
-
 import { Button } from "@/components/ui/button"
 import { SVGProps } from "react"
 import { JSX } from "react/jsx-runtime"
@@ -24,6 +18,10 @@ export function LandingComponent() {
           <MountainIcon className="h-6 w-6" />
           <span className="sr-only">Acme Inc</span>
         </Link>
+        <nav className="ml-auto flex gap-4 sm:gap-6">
+          <Link className="text-sm font-medium hover:underline underline-offset-4" to="/weightlifting">Weightlifting</Link>
+          <Link className="text-sm font-medium hover:underline underline-offset-4" to="/running">Running</Link>
+        </nav>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link className="text-sm font-medium hover:underline underline-offset-4" to="#">
             Features
