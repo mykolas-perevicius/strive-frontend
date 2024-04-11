@@ -16,7 +16,7 @@ export function WeightliftingDashboard() {
     <div className="grid min-h-screen bg-gray-100/40 lg:grid-cols-[280px_1fr] dark:bg-gray-800/40">
       <div className="hidden border-r border-gray-200 lg:block dark:border-gray-800">
         <div className="flex h-full max-h-screen flex-col gap-2">
-          <div className="flex h-[16] items-center border-b px-6">
+          <div className="flex h-[60px] items-center border-b px-6">
             <Link className="flex items-center gap-2 font-semibold" to="#">
               <Package2Icon className="h-6 w-6" />
               <span className="">Acme Inc</span>
@@ -84,7 +84,7 @@ export function WeightliftingDashboard() {
           </Button>
         </header>
         <main className="flex flex-1 flex-col p-4 md:p-6">
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-3 mb-4">
             <Card className="col-span-2">
               <CardHeader className="flex flex-row items-center space-y-0">
                 <CardTitle className="text-lg font-semibold">Profile</CardTitle>
@@ -147,7 +147,7 @@ export function WeightliftingDashboard() {
               </CardContent>
             </Card>
           </div>
-          <Card>
+          <Card className='mb-4'>
             <CardHeader className="flex flex-row items-center space-y-0">
               <CardTitle className="text-lg font-semibold">Workout Log</CardTitle>
               <Button className="ml-auto" size="icon" variant="ghost">
