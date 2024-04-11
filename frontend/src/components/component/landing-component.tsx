@@ -17,11 +17,11 @@ export function LandingComponent() {
         <Link className="flex items-center justify-center" to="#">
           <MountainIcon className="h-6 w-6" />
           <span className="sr-only">Acme Inc</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium hover:underline underline-offset-4" to="/weightlifting">Weightlifting</Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" to="/running">Running</Link>
+          <nav className="ml-5 flex gap-4 sm:gap-6">
+            <Link className="text-sm font-medium hover:underline underline-offset-4" to="/weightlifting">Weightlifting</Link>
+            <Link className="text-sm font-medium hover:underline underline-offset-4" to="/running">Running</Link>
         </nav>
+        </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link className="text-sm font-medium hover:underline underline-offset-4" to="#">
             Features
