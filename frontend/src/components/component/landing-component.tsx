@@ -4,7 +4,13 @@
 * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
 */
 import { Link } from 'react-router-dom';
+
+console.log('Full Input Path:', __dirname + '../components/ui/input'); 
+
 import { Input } from "@/components/ui/input"
+
+console.log('Full Button Path:', __dirname + '../components/ui/input'); 
+
 import { Button } from "@/components/ui/button"
 import { SVGProps } from "react"
 import { JSX } from "react/jsx-runtime"
