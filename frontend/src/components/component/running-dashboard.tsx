@@ -26,7 +26,7 @@ export function RunningDashboard() {
               <span className="">Acme Inc</span>
             </Link>
             <Button className="ml-auto h-8 w-8" size="icon" variant="outline">
-              <BellIcon className="h-4 w-4" />
+            <BellIcon className="h-4 w-4" />
               <span className="sr-only">Toggle notifications</span>
             </Button>
           </div>
@@ -148,7 +148,7 @@ export function RunningDashboard() {
             </div>
           </div>
           <Card>
-            <CardContent className="flex flex-col gap">
+            <CardContent className="p-6 flex flex-col gap">
               <div className="grid gap-1.5">
                 <div className="flex items-center gap-1.5">
                   <MapPinIcon className="w-4 h-4 text-gray-500 dark:text-gray-400" />
@@ -170,39 +170,47 @@ export function RunningDashboard() {
             </CardContent>
           </Card>
           <Card>
-            <CardHeader className="flex items-center gap-4">
-              <div className="flex items-center gap-2">
-                <TrendingUpIcon className="h-6 w-6" />
-                <CardTitle className="text-base">Progress</CardTitle>
+            <CardHeader className="relative">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="flex items-center">
+                  <TrendingUpIcon className="h-6 w-6 mr-2" />
+                  <CardTitle className="text-base">Progress</CardTitle>
+                </div>
               </div>
-              <Button className="ml-auto h-8 w-8" size="icon" variant="outline">
-                <MoreHorizontalIcon className="h-4 w-4" />
-                <span className="sr-only">Toggle menu</span>
-              </Button>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-3 gap-2 text-xs">
-                <div className="text-center">Miles</div>
-                <div className="text-center">Time</div>
-                <div className="text-center">Calories</div>
-                <div className="font-semibold text-center">25</div>
-                <div className="font-semibold text-center">2:45:23</div>
-                <div className="font-semibold text-center">1200</div>
-                <CurvedlineChart className="w-full aspect-[2/1]" />
+              <div className="flex items-center justify-end h-full">
+                <Button className="h-8 w-8" size="icon" variant="outline">
+                  <MoreHorizontalIcon className="h-4 w-4" />
+                  <span className="sr-only">Toggle menu</span>
+                </Button>
               </div>
-            </CardContent>
+            </CardHeader>           
+              <CardContent>
+                <div className="grid grid-cols-3 gap-2 text-xs">
+                  <div className="text-center">Miles</div>
+                  <div className="text-center">Time</div>
+                  <div className="text-center">Calories</div>
+                  <div className="font-semibold text-center">25</div>
+                  <div className="font-semibold text-center">2:45:23</div>
+                  <div className="font-semibold text-center">1200</div>
+                  <CurvedlineChart className="w-full aspect-[2/1]" />
+                </div>
+              </CardContent>
           </Card>
           <Card>
-            <CardHeader className="flex items-center gap-4">
-              <div className="flex items-center gap-2">
-                <AwardIcon className="h-6 w-6" />
+          <CardHeader className="relative">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="flex items-center">
+                <AwardIcon className="h-6 w-6 mr-2" />
                 <CardTitle className="text-base">Records</CardTitle>
               </div>
-              <Button className="ml-auto h-8 w-8" size="icon" variant="outline">
+            </div>
+            <div className="flex items-center justify-end h-full">
+              <Button className="h-8 w-8" size="icon" variant="outline">
                 <MoreHorizontalIcon className="h-4 w-4" />
                 <span className="sr-only">Toggle menu</span>
               </Button>
-            </CardHeader>
+            </div>
+          </CardHeader>
             <CardContent>
               <Table>
                 <TableHeader>
@@ -323,10 +331,10 @@ function BellIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
-      viewBox="0 0 48 48"
+      viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="5"
+      strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
