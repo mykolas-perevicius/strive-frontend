@@ -15,8 +15,8 @@ export function WeightliftingDashboard() {
   return (
     <div className="grid min-h-screen bg-gray-100/40 lg:grid-cols-[280px_1fr] dark:bg-gray-800/40">
       <div className="hidden border-r border-gray-200 lg:block dark:border-gray-800">
-        <div className="flex h-full flex-col gap-2">
-          <div className="flex h-16 items-center border-b shrink-0">
+        <div className="flex h-full max-h-screen flex-col gap-2">
+          <div className="flex h-[16] items-center border-b px-6">
             <Link className="flex items-center gap-2 font-semibold" to="#">
               <Package2Icon className="h-6 w-6" />
               <span className="">Acme Inc</span>
