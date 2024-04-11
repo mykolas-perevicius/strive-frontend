@@ -3,31 +3,32 @@
 * @see https://v0.dev/t/avAJsjQNo1y
 * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
 */
-import Link from "next/link"
-import { Input } from "src/components/ui/input"
-import { Button } from "src/components/ui/button"
+import { Link } from 'react-router-dom';
+import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
 import { SVGProps } from "react"
 import { JSX } from "react/jsx-runtime"
+
 
 export function LandingComponent() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link className="flex items-center justify-center" href="#">
+        <Link className="flex items-center justify-center" to="#">
           <MountainIcon className="h-6 w-6" />
           <span className="sr-only">Acme Inc</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+          <Link className="text-sm font-medium hover:underline underline-offset-4" to="#">
             Features
           </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+          <Link className="text-sm font-medium hover:underline underline-offset-4" to="#">
             Pricing
           </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+          <Link className="text-sm font-medium hover:underline underline-offset-4" to="#">
             About
           </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+          <Link className="text-sm font-medium hover:underline underline-offset-4" to="#">
             Contact
           </Link>
         </nav>
@@ -193,7 +194,7 @@ export function LandingComponent() {
               </form>
               <p className="text-xs text-gray-500 dark:text-gray-400">
                 Sign up to get notified when we launch.
-                <Link className="underline underline-offset-2" href="#">
+                <Link className="underline underline-offset-2" to="#">
                   Terms & Conditions
                 </Link>
               </p>
@@ -204,10 +205,10 @@ export function LandingComponent() {
           <div className="container grid items-center gap-4 px-4 text-center md:px-6">
             <p className="text-sm text-gray-500 dark:text-gray-400">© 2024 Acme Inc. All rights reserved.</p>
             <nav className="flex flex-col gap-2 sm:flex-row">
-              <Link className="text-xs hover:underline underline-offset-4" href="#">
+              <Link className="text-xs hover:underline underline-offset-4" to="#">
                 Terms of Service
               </Link>
-              <Link className="text-xs hover:underline underline-offset-4" href="#">
+              <Link className="text-xs hover:underline underline-offset-4" to="#">
                 Privacy
               </Link>
             </nav>

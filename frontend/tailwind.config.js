@@ -1,3 +1,6 @@
+// const { fontFamily } = require("tailwindcss/defaultTheme")
+
+
 /** @type {import('tailwindcss').Config} */
 
 import tailwindcssAnimate from 'tailwindcss-animate'; // Adjust path if needed
