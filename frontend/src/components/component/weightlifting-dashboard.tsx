@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button"
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { TableHead, TableRow, TableHeader, TableCell, TableBody, Table } from "@/components/ui/table"
+import { WeightliftingComponent } from './weightlifting-component';
 
 export function WeightliftingDashboard() {
   return (
@@ -193,6 +194,9 @@ export function WeightliftingDashboard() {
             </CardContent>
           </Card>
         </main>
+      </div>
+      <div className="mt-0">
+        <WeightliftingComponent />
       </div>
     </div>
   )
