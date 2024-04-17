@@ -7,6 +7,7 @@ import './App.css'
 import {LandingComponent}  from '@/components/component/landing-component'
 import {WeightliftingDashboard} from '@/components/component/weightlifting-dashboard'
 import {RunningDashboard} from '@/components/component/running-dashboard'
+import {MinicutDashboard} from '@/components/component/minicut-dashboard'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<LandingComponent />} /> 
         <Route path="/weightlifting" element={<WeightliftingDashboard />} />
         <Route path="/running" element={<RunningDashboard />} />
+        <Route path="/minicut" element={<MinicutDashboard />} />
       </Routes>
     </BrowserRouter>
   );

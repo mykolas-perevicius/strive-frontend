@@ -20,6 +20,7 @@ export function LandingComponent() {
           <nav className="ml-5 flex gap-4 sm:gap-6">
             <Link className="text-sm font-medium hover:underline underline-offset-4" to="/weightlifting">Weightlifting</Link>
             <Link className="text-sm font-medium hover:underline underline-offset-4" to="/running">Running</Link>
+            <Link className="text-sm font-medium hover:underline underline-offset-4" to="/minicut">Minicut</Link>
         </nav>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
